@@ -85,9 +85,9 @@
   <h3>3.4 Auf unserem Backend (Supabase, Frankfurt)</h3>
   <ul>
     <li>Deine Strava-Tokens (verschlüsselt gespeichert)</li>
-    <li>Ein Cache deiner Strava-Aktivitäten (damit wir Strava nicht bei jedem App-Start neu anfragen müssen)</li>
-    <li>Verknüpfungstabelle Strava-User-ID ↔ App-User</li>
+    <li>Verknüpfungstabelle Strava-User-ID ↔ App-User (Name, Profilbild, Stadt/Land aus Strava)</li>
   </ul>
+  <p>Deine <strong>Strava-Aktivitäten werden nicht dauerhaft gespeichert</strong>. Sie werden bei Bedarf live von Strava abgerufen, ausschließlich zur Anzeige und zur Berechnung deines Match Scores verwendet und danach nicht im Backend abgelegt.</p>
 
   <hr />
 
@@ -99,7 +99,6 @@
     <tbody>
       <tr><td>Login + App-Nutzung</td><td>Vertragserfüllung (du nutzt die App)</td><td>Art. 6 Abs. 1 lit. b DSGVO</td></tr>
       <tr><td>Verbindung zu Strava</td><td>Deine Einwilligung im OAuth-Flow</td><td>Art. 6 Abs. 1 lit. a DSGVO</td></tr>
-      <tr><td>Activity-Cache</td><td>Berechtigtes Interesse (Performance, weniger Strava-API-Last)</td><td>Art. 6 Abs. 1 lit. f DSGVO</td></tr>
     </tbody>
   </table>
 
